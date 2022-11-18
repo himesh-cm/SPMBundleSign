@@ -9,14 +9,14 @@ target 'SPMBundleSign' do
   # pod 'Firebase/Core'
   # pod 'Firebase/Messaging'	
 
-  # post_install do |installer|
-  #   installer.generated_projects.each do |project|
-  #     project.targets.each do |target|
-  #         target.build_configurations.each do |config|
-  #             config.build_settings["DEVELOPMENT_TEAM"] = "X8NNQ9CYL2"
-  #          end
-  #     end
-  #   end
-  # end
+  post_install do |installer|
+    installer.generated_projects.each do |project|
+      project.targets.each do |target|
+          target.build_configurations.each do |config|
+              config.build_settings["DEVELOPMENT_TEAM"] = "X8NNQ9CYL2"
+           end
+      end
+    end
+  end
 
 end
