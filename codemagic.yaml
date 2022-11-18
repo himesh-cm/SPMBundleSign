@@ -27,17 +27,17 @@ workflows:
       #     cd $CM_BUILD_DIR
       #     LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_ID")
       #     agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
-      - name: Build ipa for distribution
-        script: |
-          xcode-project build-ipa \
-            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-            --scheme "$XCODE_SCHEME"
-      # - name: Build ipa for distribution with args
+      # - name: Build ipa for distribution
       #   script: |
-      #     ls $HOME/clone/iOSNativeAPNS && xcode-project build-ipa \
+      #     xcode-project build-ipa \
       #       --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-      #       --scheme "$XCODE_SCHEME" \
-      #       --archive-flags "-destination 'generic/platform=iOS' --CODE_SIGN_STYLE=Manual"
+      #       --scheme "$XCODE_SCHEME"
+      - name: Build ipa for distribution with args
+        script: |
+          ls $HOME/clone/iOSNativeAPNS && xcode-project build-ipa \
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME" \
+            --archive-flags "-destination 'generic/platform=iOS' CODE_SIGNING_REQUIRED=YES CODE_SIGNING_ALLOWED=NO"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
