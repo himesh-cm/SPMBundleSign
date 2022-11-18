@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE324792927988C005B64B8 /* Pods_SPMBundleSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364ED256050947B924B1A063 /* Pods_SPMBundleSign.framework */; };
+		1BE3247A2927988C005B64B8 /* Pods_SPMBundleSign.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 364ED256050947B924B1A063 /* Pods_SPMBundleSign.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C8DF137028A6182800F14E75 /* DependenciesUmbrella in Frameworks */ = {isa = PBXBuildFile; productRef = C8DF136F28A6182800F14E75 /* DependenciesUmbrella */; };
 		C8DF137128A6182800F14E75 /* DependenciesUmbrella in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C8DF136F28A6182800F14E75 /* DependenciesUmbrella */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C8EBBECD28A4CC2D0075C25D /* SPMBundleSignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBBECC28A4CC2D0075C25D /* SPMBundleSignApp.swift */; };
@@ -22,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1BE3247A2927988C005B64B8 /* Pods_SPMBundleSign.framework in Embed Frameworks */,
 				C8DF137128A6182800F14E75 /* DependenciesUmbrella in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -30,12 +33,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		364ED256050947B924B1A063 /* Pods_SPMBundleSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPMBundleSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD0568044240CCF1E680A85 /* Pods-SPMBundleSign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPMBundleSign.release.xcconfig"; path = "Target Support Files/Pods-SPMBundleSign/Pods-SPMBundleSign.release.xcconfig"; sourceTree = "<group>"; };
 		C8EBBEC928A4CC2D0075C25D /* SPMBundleSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMBundleSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EBBECC28A4CC2D0075C25D /* SPMBundleSignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMBundleSignApp.swift; sourceTree = "<group>"; };
 		C8EBBECE28A4CC2D0075C25D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8EBBED028A4CC2D0075C25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8EBBED328A4CC2D0075C25D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8EBBEDD28A4CDE10075C25D /* Dependencies */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Dependencies; path = SPMBundleSign/Dependencies; sourceTree = "<group>"; };
+		FDCCA5CF4A56ACD426E79FC0 /* Pods-SPMBundleSign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPMBundleSign.debug.xcconfig"; path = "Target Support Files/Pods-SPMBundleSign/Pods-SPMBundleSign.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE324792927988C005B64B8 /* Pods_SPMBundleSign.framework in Frameworks */,
 				C8DF137028A6182800F14E75 /* DependenciesUmbrella in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,9 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1298B9E8DDED9B10D99478FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDCCA5CF4A56ACD426E79FC0 /* Pods-SPMBundleSign.debug.xcconfig */,
+				6BD0568044240CCF1E680A85 /* Pods-SPMBundleSign.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C83D0F8028A4D0F9009AF857 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				364ED256050947B924B1A063 /* Pods_SPMBundleSign.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -64,6 +81,7 @@
 				C8EBBECB28A4CC2D0075C25D /* SPMBundleSign */,
 				C8EBBECA28A4CC2D0075C25D /* Products */,
 				C83D0F8028A4D0F9009AF857 /* Frameworks */,
+				1298B9E8DDED9B10D99478FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8EBBED728A4CC2D0075C25D /* Build configuration list for PBXNativeTarget "SPMBundleSign" */;
 			buildPhases = (
+				595FA9A69F852FC7B02A9330 /* [CP] Check Pods Manifest.lock */,
 				C8EBBEC528A4CC2D0075C25D /* Sources */,
 				C8EBBEC628A4CC2D0075C25D /* Frameworks */,
 				C8EBBEC728A4CC2D0075C25D /* Resources */,
@@ -162,6 +181,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		595FA9A69F852FC7B02A9330 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPMBundleSign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8EBBEC528A4CC2D0075C25D /* Sources */ = {
@@ -294,6 +338,7 @@
 		};
 		C8EBBED828A4CC2D0075C25D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCCA5CF4A56ACD426E79FC0 /* Pods-SPMBundleSign.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +374,7 @@
 		};
 		C8EBBED928A4CC2D0075C25D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD0568044240CCF1E680A85 /* Pods-SPMBundleSign.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
