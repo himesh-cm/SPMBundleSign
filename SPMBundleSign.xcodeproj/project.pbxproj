@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BE3247A2927988C005B64B8 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BE3247A2927988C005B64B8 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C8DF137028A6182800F14E75 /* DependenciesUmbrella in Frameworks */ = {isa = PBXBuildFile; productRef = C8DF136F28A6182800F14E75 /* DependenciesUmbrella */; };
 		C8DF137128A6182800F14E75 /* DependenciesUmbrella in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C8DF136F28A6182800F14E75 /* DependenciesUmbrella */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C8EBBECD28A4CC2D0075C25D /* SPMBundleSignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBBECC28A4CC2D0075C25D /* SPMBundleSignApp.swift */; };
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1BE3247A2927988C005B64B8 /* BuildFile in Embed Frameworks */,
+				1BE3247A2927988C005B64B8 /* (null) in Embed Frameworks */,
 				C8DF137128A6182800F14E75 /* DependenciesUmbrella in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -52,20 +52,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1298B9E8DDED9B10D99478FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		C8EBBEC028A4CC2D0075C25D = {
 			isa = PBXGroup;
 			children = (
 				C8EBBEDD28A4CDE10075C25D /* Dependencies */,
 				C8EBBECB28A4CC2D0075C25D /* SPMBundleSign */,
 				C8EBBECA28A4CC2D0075C25D /* Products */,
-				1298B9E8DDED9B10D99478FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
