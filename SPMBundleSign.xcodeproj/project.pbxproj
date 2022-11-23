@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		1BDC182A292E2E5F0037579E /* SPMBundleSign.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPMBundleSign.entitlements; sourceTree = "<group>"; };
+		1BDC182B292E2FEA0037579E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C8EBBEC928A4CC2D0075C25D /* SPMBundleSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMBundleSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EBBECC28A4CC2D0075C25D /* SPMBundleSignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMBundleSignApp.swift; sourceTree = "<group>"; };
 		C8EBBECE28A4CC2D0075C25D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		C8EBBECB28A4CC2D0075C25D /* SPMBundleSign */ = {
 			isa = PBXGroup;
 			children = (
+				1BDC182B292E2FEA0037579E /* Info.plist */,
 				1BDC182A292E2E5F0037579E /* SPMBundleSign.entitlements */,
 				C8EBBECC28A4CC2D0075C25D /* SPMBundleSignApp.swift */,
 				C8EBBECE28A4CC2D0075C25D /* ContentView.swift */,
@@ -296,11 +298,12 @@
 				CODE_SIGN_ENTITLEMENTS = SPMBundleSign/SPMBundleSign.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SPMBundleSign/Preview Content\"";
 				DEVELOPMENT_TEAM = X8NNQ9CYL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SPMBundleSign/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSCPPHimesh;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,11 +335,12 @@
 				CODE_SIGN_ENTITLEMENTS = SPMBundleSign/SPMBundleSign.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SPMBundleSign/Preview Content\"";
 				DEVELOPMENT_TEAM = X8NNQ9CYL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SPMBundleSign/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSCPPHimesh;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
