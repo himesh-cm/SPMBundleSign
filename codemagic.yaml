@@ -32,12 +32,12 @@ workflows:
       #     xcode-project build-ipa \
       #       --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
       #       --scheme "$XCODE_SCHEME"
-      - name: Build ipa for distribution with args
+      - name: Build ipa for distribution with xcargs
         script: |
           xcode-project build-ipa \
             --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
             --scheme "$XCODE_SCHEME" \
-            --archive-flags "-destination 'generic/platform=iOS' CODE_SIGNING_REQUIRED=YES CODE_SIGNING_ALLOWED=NO"
+            ----archive-xcargs "-destination 'generic/platform=iOS' CODE_SIGNING_REQUIRED=YES CODE_SIGNING_ALLOWED=NO"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
