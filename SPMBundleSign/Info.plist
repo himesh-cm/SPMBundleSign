@@ -1,23 +1,13 @@
 <plist version="1.0">
 <dict>
-<dict>
-	<key>LSMinimumSystemVersion</key>
 	<key>LSMinimumSystemVersion</key>
     <string>13.0</string>
-	<string>13.0</string>
-	<key>UIBackgroundModes</key>
 	<key>UIBackgroundModes</key>
 	<array>
-	<array>
-		<string>fetch</string>
 		<string>fetch</string>
 		<string>remote-notification</string>
-		<string>remote-notification</string>
 	</array>
-	</array>
-        <key>ITSAppUsesNonExemptEncryption</key>
-        <false/>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
 </dict>
-</dict>
-</plist>
 </plist>
