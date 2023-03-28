@@ -6,6 +6,7 @@ workflows:
     integrations:
       app_store_connect: Himesh APNS
     environment:
+      ndk: 21.4.7075529      
       ios_signing:
         distribution_type: app_store
         bundle_identifier: io.himesh.iOSCPP
