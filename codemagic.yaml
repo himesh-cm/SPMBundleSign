@@ -6,6 +6,8 @@ workflows:
     integrations:
       app_store_connect: Himesh APNS
     environment:
+      groups:
+       - JAVA_PATH
       ndk: 21.4.7075529      
       ios_signing:
         distribution_type: app_store
